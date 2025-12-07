@@ -76,15 +76,15 @@ async function semanticChunking(text, threshold = CHUNK_THRESHOLD) {
   return chunks;
 }
 
-// --- HuggingFace embeddings (suppress info logs) ---
+// HuggingFace embeddings
 async function getEmbeddings(texts) {
   const inputs = Array.isArray(texts) ? texts : [texts];
   const originalLog = console.log;
-  console.log = () => {}; // suppress logs
+  console.log = () => {};
 
   const resp = await hf.featureExtraction({ model: EMBED_MODEL_NAME, inputs });
 
-  console.log = originalLog; // restore logs
+  console.log = originalLog;
   return resp;
 }
 
