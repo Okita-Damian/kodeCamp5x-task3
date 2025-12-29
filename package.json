@@ -1,23 +1,35 @@
 {
   "name": "task-4",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "This project is a **Retrieval-Augmented Generation (RAG) backend** built with **Node.js + Express**, **ChromaDB (Docker)**, **Hugging Face embeddings**, and **Google Gemini** for answers.",
   "keywords": [],
-  "author": "",
+  "homepage": "https://github.com/Okita-Damian/kodeCamp5x-task3#readme",
+  "bugs": {
+    "url": "https://github.com/Okita-Damian/kodeCamp5x-task3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okita-Damian/kodeCamp5x-task3.git"
+  },
   "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js"
+  },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "@huggingface/inference": "^4.13.4",
-    "chromadb": "^3.1.6",
+    "@huggingface/inference": "^4.13.5",
+    "chromadb": "^3.2.0",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "fs": "^0.0.1-security",
     "mathjs": "^15.1.0",
     "multer": "^2.0.2",
-    "node-fetch": "^2.7.0"
-  }
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {}
 }
